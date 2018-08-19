@@ -1,0 +1,9 @@
+<h1>{{ question.question_text }}</h1>
+
+<ul>
+<div ng-repeat="choice in question.choices">
+    <li>{{ choice.votes }}</li>
+</div>
+</ul>
+
+<a ng-href="/polls/#/polls/{{question.id}}">Vote again?</a>
